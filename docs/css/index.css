@@ -16,15 +16,15 @@ body {
 	margin: -20px 0 50px;
 }
 
+
 h1 {
-	color: #DDDDDD;
 	font-weight: bold;
 	margin: 0;
 }
 
 h2 {
-	color: #DDDDDD;
 	text-align: center;
+	color: rgb(238, 234, 234);
 }
 
 p {
@@ -40,7 +40,7 @@ span {
 }
 
 a {
-	color: rgb(255, 255, 255);
+	color: #333;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
@@ -50,7 +50,7 @@ button {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
 	background-color: #FF4B2B;
-	color: #FFFFFF;
+	color: #ffffff;
 	font-size: 12px;
 	font-weight: bold;
 	padding: 12px 45px;
@@ -58,7 +58,10 @@ button {
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
 }
-
+a, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
+}
 button:active {
 	transform: scale(0.95);
 }
@@ -73,9 +76,7 @@ button.ghost {
 }
 
 form {
-
-	background: -webkit-linear-gradient(to right, #17182b, #0a091f);
-	background: linear-gradient(to right, #141031, #0b0714);
+	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -96,8 +97,6 @@ input {
 .container {
 	background-color: #fff;
 	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
 	width: 768px;
@@ -148,22 +147,14 @@ input {
 	}
 }
 
-.overlay-container {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	transition: transform 0.6s ease-in-out;
-	z-index: 100;
-}
+
 
 .container.right-panel-active .overlay-container{
 	transform: translateX(-100%);
 }
 
 .overlay {
+
 	background: transparent;
 	background: -webkit-linear-gradient(to right, #17182b, #0a091f);
 	background: linear-gradient(to right, #141031, #0b0714);
@@ -218,32 +209,33 @@ input {
 .social-container {
 	margin: 20px 0;
 }
-
-.social-container a {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
+a.button:visited
+{
+	 color:rgb(255, 255, 255);
+}
+.button
+{
+	font-size: 10px;
+	color: rgb(255, 255, 255);
 }
 
 footer {
     background-color: #222;
     color: #fff;
-    font-size: 14px;
+    font-size: 1px;
     bottom: 0;
     position: fixed;
     left: 0;
     right: 0;
     text-align: center;
     z-index: 999;
+	text-decoration: none;
+	color: inherit;
 }
 
+
 footer p {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 footer i {
@@ -254,3 +246,4 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+
